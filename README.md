@@ -1,11 +1,11 @@
 # Keep it short
 <i>Text summarization project</i>
 
-
-## ▶️ 01_Centroid_based_Text_Summarization
 ```diff
-- [TF-IDF] [cossim] [Word2Vec]
+## ▶️ 01_Centroid_based_Text_Summarization
 ```
+[TF-IDF] [cossim] [Word2Vec]
+
 Centroids are the most relevant tokens (tokens that contain the same meaning).
 
 1. Sum up vector representation of words that are part of a centroid => get embedding representation of the centroid.
