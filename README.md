@@ -1,8 +1,9 @@
 # Keep it short
-Text summarization project
+<i>Text summarization project</i>
 
+<p></p>
 ## ▶️ 01_Centroid_based_Text_Summarization
-[TF-IDF] [cossim] [Word2Vec]
+<span style="color:red;">[TF-IDF] [cossim] [Word2Vec]</span>
 
 Centroids are the most relevant tokens (tokens that contain the same meaning).
 
