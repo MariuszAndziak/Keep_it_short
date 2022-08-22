@@ -2,13 +2,17 @@
 <i>Text summarization project</i>
 <p></p>
 <p></p>
-## Notebook ▶️ 01_Centroid_based_Text_Summarization
+
+```diff
+Notebook ▶️ 01_Centroid_based_Text_Summarization
+```
 
 <b>Uses:</b> [TF-IDF] [cossim] [Word2Vec]
 
 <b>Intro:</b>
+<i>
 Centroids are the most relevant tokens (tokens that contain the same meaning).
-One can use them to extract sentences that cointain the most information in a given text.
+One can use them to extract sentences that cointain the most information in a given text. </i>
 
 <b>Steps:</b>
 <i>
