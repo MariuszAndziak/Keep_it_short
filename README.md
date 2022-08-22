@@ -7,7 +7,7 @@
 
 ```
 
-## ▶️ Notebook ▶️ 01_Centroid_based_Text_Summarization
+## ▶️ Notebook ▶️ [01_Centroid_based_Text_Summarization](01_Centroid_based_Text_Summarization.ipynb)
 🔵 <b>Uses:</b> <i>[TF-IDF] [cossim] [Word2Vec]</i>
 
 🔵 <b>Intro:</b>
@@ -24,6 +24,7 @@ One can use them to extract sentences that cointain the most information in a gi
 5. Select sentences based on their score until a certain number of words (hyperparameter) is reached
 6. Avoid redundancy - if a chosen sentence is too similar to the ones in the already produced summary, don't add it (cosine similarity + predefined threshold)
 </i>
+
 ```diff
 
 ```
