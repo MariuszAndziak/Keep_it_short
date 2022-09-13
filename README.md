@@ -7,6 +7,7 @@ We want to quickly grasp the general understanding of a particular text and not 
 phrase relevant or just a filler. <br>
 Text summarization can be decomposed into extractive and abstractive. The former keeps the original sentence structure unchanged and only picks the sentences that convey the most meaning. On the other hand, the latter reduces the length of the original text and produces new structures that contain the same essential information (definition, tone or intention) as the original.<br>
 Both types of text summarization are shown in these notebooks.
+
 ```diff
 
 ```
@@ -28,6 +29,7 @@ One can use them to extract sentences that cointain inportant imformation in a g
 5. Select sentences based on their score until a certain number  (hyperparameter) is reached. This will produce a summary.
 6. Avoid redundancy - if a chosen sentence is too similar to the ones in the already produced summary, don't add it (use cosine similarity + predefined threshold to avoid redundancy).
 </i>
+
 
 ```diff
 
