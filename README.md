@@ -12,7 +12,7 @@ Both types of text summarization are shown in these notebooks.
 
 ```
 
-## ▶️ Notebook ▶️ [01_Centroid_based_Text_Summarization] (01_Centroid_based_Text_Summarization.ipynb) ##
+## ▶️ Notebook ▶️ [01_Centroid_based_Text_Summarization](01_Centroid_based_Text_Summarization.ipynb) ##
 🔵 <b>Uses:</b> <i>[TF-IDF] [cossim] [Word2Vec]</i>
 
 🔵 <b>Intro:</b>
