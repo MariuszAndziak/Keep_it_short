@@ -5,6 +5,7 @@ import string
 # nlp specific modules
 from typing import List, Union
 from nltk.tokenize import sent_tokenize
+from nltk.cluster.util import cosine_distance
 from spacy.lang.pl.stop_words import STOP_WORDS
 
 # other modules
@@ -39,6 +40,22 @@ def cos_sim(v: vector, w: vector) -> float:
     '''
     return dot(v, w) / (dot(v,v) * dot(w,w)) ** .5
 
+def cos_sim_dist(v: vector, w: vector) -> float:
+    '''
+    Calculate cosine similarity between two vectors. Return 0 if both vectors
+    contain zeroes.
+
+    Args:
+        v:  first vector
+        w:  second vector
+    
+    Returns:
+        Cosine similarity of two vectors based on nltk's cosine distance
+    '''
+    if ((sum(v) == 0) or (sum(w) == 0)):
+        return 0
+    else:
+        return 1 - cosine_distance(v, w)
 
 class Preprocessing(object):
     '''
