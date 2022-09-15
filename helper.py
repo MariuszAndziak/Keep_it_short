@@ -129,3 +129,26 @@ def display_highlights(raw_sentences: list, summarized_sents: list):
             # make a yellow background arround it
             final += f'<span style="background-color:rgba(255,215,0,0.3);"> {sent} </span>'
     display(HTML(''.join([elem for elem in final])))
+
+
+def display_highlights3(raw_sentences: list, summarized_sents: list, phrases: list = []):
+    '''
+    Display the whole text as HTML, and highlight the most importand sentences.
+    '''
+    final = '.'.join([elem.strip() for elem in raw_sentences]) # final output as string
+
+    def highlight_matches(query: str, text: str, html_tag: str) -> str:
+        def span_matches(match):
+            return html_tag.format(match.group(0))
+        return re.sub(query, span_matches, text, flags=re.I)
+
+    html_tag = '<span style="background-color:rgba(255,215,0,0.3);"> {0} </span>'
+    for sentence in summarized_sents:
+        final = highlight_matches(sentence, final ,html_tag)
+    
+    if phrases != []:
+        html_tag = '<span style="color:red">{0}</span>' 
+        for phrase in phrases:
+            final = highlight_matches(phrase, final, html_tag)
+    
+    display(HTML(''.join([_ for _ in final])))
