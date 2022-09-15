@@ -34,3 +34,24 @@ One can use them to extract sentences that cointain inportant imformation in a g
 ```diff
 
 ```
+
+## ▶️ Notebook ▶️ [02_TextRank_and_KeyPhrase_Text_Summarization](02_TextRank_and_KeyPhrase_Text_Summarization.ipynb) ##
+🔵 <b>Uses:</b> <i>[keras] [cossim] [networkx] [KeyPhraseTransformer]</i>
+
+🔵 <b>Intro:</b>
+<i>
+Another approach to address text summary, using cosine similarity is to use pagerank algorithm to transform the content into a pseudo-graph and produce a ranking of nodes (sentences) based on the connections (cos_sim). The highest ranking sentences should be considered when construction the summary. </i>
+<i>
+Additionally, a Keyphrase is introduced to show individual phrases that are meaningful to the text content. </i>
+
+🔵 <b>Steps:</b>
+<i>
+1. Make text representation using keras text tokenizer.
+2. Construct similarity matrix between sentences using cosine similarity.
+3. Rank the sentences using the structure of other sentences representations that particular sentence is connected to.
+4. Specify percent of sentences to be used as final prediction.
+5. Use KeyPhraseTransformer to highlight meaningful phrases. 
+</i>
+
+
+```diff
